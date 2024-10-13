@@ -8,7 +8,7 @@ import {setItemWithExpiry, getItemWithExpiry} from '../utils/tokenExpiry'
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const Backend_Url = "http://localhost:3000";
+  const Backend_Url = "https://e-commerce-backend-a5jr.onrender.com";
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
 

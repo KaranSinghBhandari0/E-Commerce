@@ -1,5 +1,4 @@
 import React, { createContext, useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { setItemWithExpiry, getItemWithExpiry } from '../utils/tokenExpiry';
@@ -8,8 +7,7 @@ import { setItemWithExpiry, getItemWithExpiry } from '../utils/tokenExpiry';
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
-  const Backend_Url = "http://localhost:3000";
-  const navigate = useNavigate();
+  const Backend_Url = "https://e-commerce-backend-a5jr.onrender.com";
   const authToken = getItemWithExpiry('authToken');
 
   const [products, setProducts] = useState([]);
