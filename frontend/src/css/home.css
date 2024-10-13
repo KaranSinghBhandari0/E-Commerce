@@ -18,3 +18,25 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
+
+.category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.category img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+}
+
+@media (min-width: 540px) {
+    .category {
+        gap: 2rem;
+    }
+}

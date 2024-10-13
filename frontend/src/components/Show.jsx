@@ -41,10 +41,10 @@ export default function Show() {
                 <p><b> Price: ₹ {product.price.toLocaleString('en-IN')}</b></p>
                 <p><b>Product Description: </b>{product.description}</p>
                 <div className="card3-row">
-                    <button className="btn btn-success col-8" onClick={() => handleBuy(product.price)}>
+                    <button className="btn btn-success col-md-8 col-12" onClick={() => handleBuy(product.price)}>
                         Buy Now
                     </button>
-                    <button className="btn btn-warning col-8" onClick={() => {addToCart(product._id,product)}}>
+                    <button className="btn btn-warning col-md-8 col-12" onClick={() => {addToCart(product._id,product)}}>
                         Add to Cart
                     </button>
                 </div>

@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 import logo from '../images/logo.png';
 import { useContext } from 'react';
 import '../css/navbar.css';
-import { ProductContext } from '../context/ProductContex';
 
 export default function Navbar() {
     const { isAuthenticated, isAdmin, logout } = useContext(AuthContext);
-    const { handleProduct } = useContext(ProductContext);
 
     const handleLogout = () => {
         logout();
@@ -22,19 +20,6 @@ export default function Navbar() {
                     <span>E-commerce</span>
                 </a>
                 <div className='nav-links'>
-                    <div className="dropdown">
-                        <button className="btn btn-warning dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop
-                        </button>
-                        <ul className="dropdown-menu">
-                            <li><button className="dropdown-item" onClick={() => handleProduct("Clothing")}>Clothing</button></li>
-                            <li><button className="dropdown-item" onClick={() => handleProduct("Electronics")}>Electronics</button></li>
-                            <li><button className="dropdown-item" onClick={() => handleProduct("Furniture")}>Furniture</button></li>
-                            <li><button className="dropdown-item" onClick={() => handleProduct("Sports")}>Sports</button></li>
-                            <li><button className="dropdown-item" onClick={() => handleProduct("Beauty")}>Beauty</button></li>
-                            <li><button className="dropdown-item" onClick={() => handleProduct("ChildCare")}>ChildCare</button></li>
-                        </ul>
-                    </div>
                     <Link to="/cart" className="btn btn-warning">
                         Cart 
                         <i className="fa-solid fa-cart-shopping"></i>

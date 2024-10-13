@@ -44,6 +44,12 @@ nav a {
     background: none;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Optional: adjust the dropdown positioning if needed */
+}
+
+
 @media (max-width: 540px) {
     .nav-big {
         display: none;
