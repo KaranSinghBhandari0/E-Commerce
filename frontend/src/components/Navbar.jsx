@@ -86,7 +86,7 @@ export default function Navbar() {
                         <i className="fa-solid fa-user" style={{fontSize:"1.2rem", color: "white"}}></i>
                     </button>
                     <ul className="dropdown-menu">
-                        {!isAuthenticated ? (
+                        {!isAuthenticated() ? (
                             <>
                                 <li>
                                     <Link to="/signup" className="dropdown-item">SignUp</Link>
