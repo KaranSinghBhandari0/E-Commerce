@@ -1,0 +1,31 @@
+.carousel-item img {
+    height: 500px;
+}  
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2F2F2F;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: "";
+}
+
+.carousel-caption h5, 
+.carousel-caption p {
+    font-size: 1.3rem;
+    color: green;
+    font-weight: 800;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 540px) {
+  .carousel-item img {
+    height: 250px;
+  }  
+}

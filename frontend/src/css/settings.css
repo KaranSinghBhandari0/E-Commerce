@@ -1,0 +1,34 @@
+.settings-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.setting-boxes {
+    position: relative;
+    justify-self: center;
+    height: 145px;
+    width: 145px;
+    border-radius: 0.5rem;
+    border: 1px solid grey;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.setting-boxes img{
+    width: 101%;
+    height: 101%;
+}
+
+.setting-boxes span {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 2px 5px;
+    border-radius: 0.25rem;
+    font-size: 0.9rem;
+}

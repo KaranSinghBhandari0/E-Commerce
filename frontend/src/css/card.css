@@ -1,0 +1,26 @@
+.card {
+    margin: 0 auto;
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.card-img-top:hover {
+    transform: scale(1.05);
+}

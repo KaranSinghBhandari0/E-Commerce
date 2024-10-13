@@ -1,0 +1,52 @@
+.card3 {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card3 img {
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    margin: 1rem auto;
+}
+
+.card3-body {
+    padding: 1rem;
+    margin-left: 1rem;
+    flex: 1;
+}
+
+.card3-row {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.card3-row button {
+    border-radius: 2rem;
+}
+
+@media (min-width: 768px) {
+    .card3 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .card3 img {
+        width: 300px;
+        height: 300px;
+        margin-right: 1rem;
+    }
+
+    .card3-body {
+        border-left: 1px solid rgb(173, 173, 173);
+        padding: 0 2rem 1rem 1rem;
+        margin-left: 1rem;
+    }
+}
