@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import {setItemWithExpiry, getItemWithExpiry} from '../utils/tokenExpiry'
+import { Backend_Url } from '../utils/Backend_Url';
 
 // Create a context
 const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
-  const Backend_Url = "https://ecb.up.railway.app";
   const [isAdmin, setIsAdmin] = useState(false);
   const navigate = useNavigate();
 

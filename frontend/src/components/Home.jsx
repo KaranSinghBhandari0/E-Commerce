@@ -71,7 +71,7 @@ export default function Home() {
           <div>
           <p>Loading products...</p>
           <h4 style={{ color: 'red' , textAlign: 'center'}}>
-          <i class="fa-solid fa-triangle-exclamation"></i>
+          <i className="fa-solid fa-triangle-exclamation"></i>
             The backend may work slowly please be patient (estimated waiting time 1min) 
           </h4>
           </div>

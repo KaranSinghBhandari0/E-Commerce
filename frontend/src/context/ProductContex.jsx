@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import {setItemWithExpiry, getItemWithExpiry} from '../utils/tokenExpiry'
+import {Backend_Url} from '../utils/Backend_Url';
 
 // Create a context
 const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
-  const Backend_Url = "https://ecb.up.railway.app";
   const navigate = useNavigate();
   const authToken = getItemWithExpiry('authToken');
 

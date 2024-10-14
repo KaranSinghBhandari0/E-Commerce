@@ -2,12 +2,12 @@ import React, { createContext, useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
 import axios from 'axios';
 import { setItemWithExpiry, getItemWithExpiry } from '../utils/tokenExpiry';
+import {Backend_Url} from '../utils/Backend_Url';
 
 // Create a context
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
-  const Backend_Url = "https://ecb.up.railway.app";
   const authToken = getItemWithExpiry('authToken');
 
   const [products, setProducts] = useState([]);
@@ -149,6 +149,14 @@ const CartProvider = ({ children }) => {
     }
   };
 
+  // refresh cart when login/signup/logout
+  useEffect( () => {
+    const refreshCart = async () => {
+      await getCartProducts();
+    }
+    refreshCart();
+  }
+  ,[authToken])
 
   return (
     <CartContext.Provider value={{ addToCart, getCartProducts, products, deleteCartItem, updateCartQuantity }}>
