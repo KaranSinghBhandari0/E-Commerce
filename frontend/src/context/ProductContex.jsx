@@ -8,7 +8,7 @@ import {setItemWithExpiry, getItemWithExpiry} from '../utils/tokenExpiry'
 const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
-  const Backend_Url = "https://e-commerce-backend-a5jr.onrender.com";
+  const Backend_Url = "https://ecb.up.railway.app";
   const navigate = useNavigate();
   const authToken = getItemWithExpiry('authToken');
 

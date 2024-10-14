@@ -7,7 +7,7 @@ import { setItemWithExpiry, getItemWithExpiry } from '../utils/tokenExpiry';
 const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
-  const Backend_Url = "https://e-commerce-backend-a5jr.onrender.com";
+  const Backend_Url = "https://ecb.up.railway.app";
   const authToken = getItemWithExpiry('authToken');
 
   const [products, setProducts] = useState([]);
